@@ -428,9 +428,7 @@
     <b:include data='post' name='postTitle'/>
     <b:include name='headerByline'/>
     <b:if cond='data:view.isSingleItem'>
-      <div class='post-body entry-content float-container post-snippet'>
-        <b:eval expr='snippet(data:post.body, { length: 200, links: false, linebreaks: false })'/>
-      </div>
+      <b:include data='post' name='postBody'/>
     <b:else/>
       <b:include data='post' name='postBodySnippet'/>
       <b:include data='post' name='postJumpLink'/>
@@ -445,7 +443,9 @@
   </div>
 </b:includable>
           <b:includable id='postBodySnippet' var='post'>
-  <b:include data='post' name='postBody'/>
+  <div class='post-body entry-content float-container post-snippet'>
+    <b:eval expr='snippet(data:post.body, { length: 200, links: false, linebreaks: false })'/>
+  </div>
 </b:includable>
           <b:includable id='postCommentsAndAd' var='post'>
   <article class='post-outer-container'>
