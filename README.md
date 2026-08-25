@@ -1,7 +1,7 @@
 # blogspot-template-xml
 Blogger/blogspot template xml 极简模板
 
-## 无CSS的空白模板
+## 无 CSS 的空白模板
 blank-css-theme.xml
 https://zelikk.blogspot.com/2026/08/blogger-blogspot-blank-css-template-xml.html
 
